@@ -11,5 +11,6 @@
 ---
 ## 기능
 - Main : 내가 자바를 실행했다!, 1부터 3까지 숫자 출력
-- HelloWorld : "HelloWorld!" 문정 출력
+- HelloWorld : "HelloWorld!" 문장 출력
 - ForLoopDemo : for문을 사용해 1부터 10까지 숫자 출력
+- VariablePractice : 변수를 사용해 문장 출력

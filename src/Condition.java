@@ -23,6 +23,22 @@ public class Condition {
         } else {
             System.out.println("미성년자입니다.");
         }
+
+        // for문 + if문
+
+        for (int age = 18; age <= 22; age++) {
+
+            System.out.println("귀하의 나이는 " + age + "세 입니다.");
+
+            if (age >= 20) {
+                System.out.println("성인입니다.");
+            } else {
+                System.out.println("미성년자입니다.");
+            }
+
+            System.out.println();
+        }
     }
 
 }
+

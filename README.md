@@ -17,3 +17,4 @@
 - Condition : if문으로 나이에 따른 성인 여부 출력
 - ScorePractice : for문 + if문으로 점수 등급 출력 (변수 응용 버전 포함)
 - InputPractice : Scanner로 사용자의 입력을 받아 나이에 따른 성인 여부를 출력하고, 실수 또는 문자열 입력 시 정수 입력을 요청하는 메시지를 출력
+- NumberGuessGame1 : Random으로 사용자가 1부터 10사이의 숫자를 맞추는 게임입니다.

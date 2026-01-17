@@ -139,21 +139,7 @@ public class NumberGuessGame2 {
 
         String lv = scan.next.String
 
-        if (!lv.metches("\\d+")) {
-
-            int love = Integer.parseInt(lv);
-
-        } else {
-
-            System.out.print("1부터 3사이의 숫자를 입력하세요.");
-
-            System.out.print("");
-
-            continue;
-
-        }
-
-        if (lv.metches("\\d+")){
+        if (lv.metches("\\d+")) {
 
             int love = Integer.parseInt(lv);
 
@@ -183,23 +169,16 @@ public class NumberGuessGame2 {
 
             }
 
-        }
+        } else {
 
+            System.out.print("1부터 3사이의 숫자를 입력하세요.");
 
+            System.out.print("");
 
-
-
-        if (!lv.matches("\\d+")) {   // 만약 input이 정수와 매치가 안 된다면
-
-            System.out.println("정수를 입력해주세요.");
-
-            System.out.println();
-
-            continue; // while 처음으로 돌아감
+            continue;
 
         }
-
-
 
     }
 
+// Integer.parseInt(lv) 뒤에 나올 코드를 하단 if문을 만들어 코드 완성 - 수정

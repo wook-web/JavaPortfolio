@@ -14,15 +14,21 @@ public class NumberGuessGame2 {
 
         int over = 10;
 
+        int count = 0;  // 시도 횟수 카운트
+
         int answer = random.nextInt(over) + 1;    // int - answer은 (0 ~ 9) + 1중 무작위 값을 지님
 
         //boolean isCorrect = false;  // 참과 거짓을 나타내는 변수 - 제거
 
         System.out.println("숫자 맞추기 게임 시작!");
 
+        // 반복문
+
         while (true) {    // while (조건)
 
             System.out.print("1부터 " + over + "사이 숫자를 입력하세요. : ");
+
+            count++;
 
             String input = scan.nextLine(); // 사용지의 입력값 받기 = input
 
@@ -57,6 +63,8 @@ public class NumberGuessGame2 {
 
                 System.out.println("정답입니다. 게임 종료");
 
+                System.out.println(count + "번 만에 맞췄습니다!");
+
                 break;  //isCorrect = true;    // 반복문 끝내기
 
             } else if (guess > answer) {   // 입력 값 > 랜덤 값
@@ -84,3 +92,5 @@ public class NumberGuessGame2 {
 // continue를 통해 코드를 더 깔끔하게 작성
 
 // boolean 변수 제거 후, break 사용
+
+// count 변수 추가로 시도 횟수 출력 코드 완성

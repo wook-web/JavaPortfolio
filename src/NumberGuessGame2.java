@@ -10,6 +10,8 @@ public class NumberGuessGame2 {
 
         Scanner scan = new Scanner(System.in);  // Scanner - scan은 사용자의 입력 값
 
+        Scanner sc = new Scanner(System.in);
+
         Random random = new Random();           // Random - random
 
         int over = 10;
@@ -61,11 +63,43 @@ public class NumberGuessGame2 {
 
             if (guess == answer) {   // 입력 값 > 랜덤 값
 
-                System.out.println("정답입니다. 게임 종료");
+                System.out.println("정답입니다.");
 
                 System.out.println(count + "번 만에 맞췄습니다!");
 
-                break;  //isCorrect = true;    // 반복문 끝내기
+                System.out.println();
+
+                // 구분선
+
+                while (true) {
+
+                    System.out.print("다시 하시겠습니까? (y/n) : ");
+
+                    String yn = sc.nextLine();
+
+                    if (yn.matches("y")) {
+
+                        count = 0;
+
+                        break;
+
+                    } else if (yn.matches("n")){
+
+                        System.out.println("게임 종료");
+
+                        break;
+
+                    } else {
+
+                        System.out.println("y 또는 n를 입력하세요.");
+
+                        System.out.println();
+
+                    }
+
+                }
+
+                // 구분선
 
             } else if (guess > answer) {   // 입력 값 > 랜덤 값
 
@@ -94,3 +128,6 @@ public class NumberGuessGame2 {
 // boolean 변수 제거 후, break 사용
 
 // count 변수 추가로 시도 횟수 출력 코드 완성
+
+// 다시하기 기능 코드 관성
+// * n을 입력하여도 종료가 안됨

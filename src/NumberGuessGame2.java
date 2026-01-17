@@ -10,7 +10,7 @@ public class NumberGuessGame2 {
 
         Scanner scan = new Scanner(System.in);  // Scanner - scan은 사용자의 입력 값
 
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
         Random random = new Random();           // Random - random
 
@@ -20,19 +20,19 @@ public class NumberGuessGame2 {
 
         int answer = random.nextInt(over) + 1;    // int - answer은 (0 ~ 9) + 1중 무작위 값을 지님
 
-        //boolean isCorrect = false;  // 참과 거짓을 나타내는 변수 - 제거
+        boolean isRunning = true;  // 참과 거짓을 나타내는 변수 - 제거
 
         System.out.println("숫자 맞추기 게임 시작!");
 
         // 반복문
 
-        while (true) {    // while (조건)
+        while (isRunning) {    // while (조건)
 
             System.out.print("1부터 " + over + "사이 숫자를 입력하세요. : ");
 
-            count++;
-
             String input = scan.nextLine(); // 사용지의 입력값 받기 = input
+
+            count++;
 
             // 1. 숫자인지 검사
 
@@ -69,23 +69,25 @@ public class NumberGuessGame2 {
 
                 System.out.println();
 
-                // 구분선
-
                 while (true) {
 
                     System.out.print("다시 하시겠습니까? (y/n) : ");
 
-                    String yn = sc.nextLine();
+                    String yn = scan.nextLine();
 
                     if (yn.matches("y")) {
 
                         count = 0;
+
+                        answer = random.nextInt(over) + 1;
 
                         break;
 
                     } else if (yn.matches("n")){
 
                         System.out.println("게임 종료");
+
+                        isRunning = false;
 
                         break;
 
@@ -99,15 +101,13 @@ public class NumberGuessGame2 {
 
                 }
 
-                // 구분선
-
             } else if (guess > answer) {   // 입력 값 > 랜덤 값
 
-                System.out.println("너무 큽니다!");
+                System.out.println("정답보다 큽니다!");
 
             } else {
 
-                System.out.println("너무 적습니다!");
+                System.out.println("정답보다 적습니다!");
 
             }
 
@@ -130,4 +130,5 @@ public class NumberGuessGame2 {
 // count 변수 추가로 시도 횟수 출력 코드 완성
 
 // 다시하기 기능 코드 관성
-// * n을 입력하여도 종료가 안됨
+// n을 입력하여도 종료가 안됨, 같은 숫자로 다시 시작 - 해결
+// boolean 변수를 추가하여 해결 + random.nextInt 추가로 재시작 시, 정답이 다시 랜덤한 값

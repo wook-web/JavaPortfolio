@@ -135,45 +135,47 @@ public class NumberGuessGame2 {
 
     while(true) {
 
-        System.out.print("난이도를 선택해주세요. : ");
+        System.out.println("난이도를 선택해주세요. (1:쉬움 2:보통 3:어려움) : ");
 
-        String lv = scan.next.String
+        String lv = scan.nextLine();
 
-        if (lv.metches("\\d+")) {
+        if (lv.matches("\\d+")) {
 
             int love = Integer.parseInt(lv);
 
-            if(love =  1){
+            if(love == 1) {
 
                 over =10;
 
                 break;
 
-            }else if(love = 2){
+            } else if(love == 2) {
 
                 over =20;
 
                 break;
 
-            }else if(love = 3){
+            } else if(love == 3) {
 
                 over =30;
 
                 break;
 
-            }else{
+            } else {
 
-                System.out.print("1부터 3사이의 숫자를 입력하세요.");
+                System.out.println("1부터 3사이의 숫자를 입력하세요.");
 
-                System.out.print("");
+                System.out.println();
+
+                continue; // 추가
 
             }
 
         } else {
 
-            System.out.print("1부터 3사이의 숫자를 입력하세요.");
+            System.out.println("1부터 3사이의 숫자를 입력하세요.");
 
-            System.out.print("");
+            System.out.println();
 
             continue;
 
@@ -182,3 +184,10 @@ public class NumberGuessGame2 {
     }
 
 // Integer.parseInt(lv) 뒤에 나올 코드를 하단 if문을 만들어 코드 완성 - 수정
+
+// String lv = scan.next.String → String lv = scan.nextLine(); - 문법 오류 수정
+// metches("\\d+") → matches("\\d+") - 문법 오류 수정
+// continue; 추가
+// if 문 연산자 = → == - 변경
+// System.out.print → System.out.println 변경
+// 난이도 선택 문장 수정

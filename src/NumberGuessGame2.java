@@ -139,6 +139,8 @@ public class NumberGuessGame2 {
 
                             answer = random.nextInt(over) + 1;
 
+                            isRunning = false;
+
                             break;
 
                         } else if (yn.matches("n")){
@@ -207,3 +209,6 @@ public class NumberGuessGame2 {
 // boolean으로 게임 종료 변수 추가
 // 다시하기 후 answer 값이 10이하로 고정 됨 - 해결
 // int answer = random.nextInt(over) + 1; 위치 변경
+
+// isRunning = false; 추가로 다시하기를 하면 난이도 선택부터 시작 가능
+// 최종 완료

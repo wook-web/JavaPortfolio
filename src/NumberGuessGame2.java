@@ -18,7 +18,7 @@ public class NumberGuessGame2 {
 
         int count = 0;  // 시도 횟수 카운트
 
-        int answer = random.nextInt(over) + 1;  // int - answer은 (0 ~ 9) + 1중 무작위 값을 지님
+        //int answer = random.nextInt(over) + 1;  // int - answer은 (0 ~ 9) + 1중 무작위 값을 지님
 
         boolean game = true;
 
@@ -76,6 +76,8 @@ public class NumberGuessGame2 {
 
             boolean isRunning = true;  // 참과 거짓을 나타내는 변수
 
+            int answer = random.nextInt(over) + 1; // 위치 변경
+
             System.out.println("숫자 맞추기 게임 시작!");
 
             // 반복문 - 게임 플레이
@@ -122,6 +124,8 @@ public class NumberGuessGame2 {
                     System.out.println(count + "번 만에 맞췄습니다!");
 
                     System.out.println();
+
+                    // 4. 다시하기
 
                     while (true) {
 
@@ -201,4 +205,5 @@ public class NumberGuessGame2 {
 // 난이도 선택 문장 수정
 
 // boolean으로 게임 종료 변수 추가
-// answer
+// 다시하기 후 answer 값이 10이하로 고정 됨 - 해결
+// int answer = random.nextInt(over) + 1; 위치 변경

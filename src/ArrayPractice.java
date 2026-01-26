@@ -5,6 +5,8 @@ public class ArrayPractice {
 
     public static void main (String[] args){
 
+        int all = 0; // 합계 변수
+
         int[] A = {70, 85, 90, 60, 100}; // 배열 생성
 
         for (int X = 0; X < A.length; X++) {
@@ -13,8 +15,11 @@ public class ArrayPractice {
 
         }
 
+        System.out.println((A[0] + A[1] + A[2] + A[3] + A[4]) / A.length);
+
     }
 
 }
 
 // for문을 활용하여, 배열 안의 값을 모두 출력
+// 배열의 평균값 출력 - 코드 수정 팔요

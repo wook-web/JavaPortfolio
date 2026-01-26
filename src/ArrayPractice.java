@@ -13,13 +13,16 @@ public class ArrayPractice {
 
             System.out.println(A[X]);
 
+            all += A[X];
+
         }
 
-        System.out.println((A[0] + A[1] + A[2] + A[3] + A[4]) / A.length);
+        System.out.println(all / A.length);
 
     }
 
 }
 
 // for문을 활용하여, 배열 안의 값을 모두 출력
-// 배열의 평균값 출력 - 코드 수정 팔요
+// 배열의 평균값 출력 - 코드 수정 팔요 | *완료
+// for을 활용하여 합계값을 변수에 저장

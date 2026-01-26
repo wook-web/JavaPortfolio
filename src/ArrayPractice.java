@@ -5,11 +5,13 @@ public class ArrayPractice {
 
     public static void main (String[] args){
 
+        int[] A = {70, 85, 90, 60, 100}; // 배열 생성
+
         int all = 0; // 합계 변수
 
-        int max = 0; // 최댓값 변수
+        int max = A[0]; // 최댓값 변수
 
-        int[] A = {70, 85, 90, 60, 100}; // 배열 생성
+        int min = A[0]; // 최솟값 변수
 
         for (int X = 0; X < A.length; X++) {
 
@@ -23,6 +25,13 @@ public class ArrayPractice {
 
             }
 
+            if (min > A[X]) {
+
+                min = A[X];
+
+            }
+
+
         }
 
         System.out.println("합계 : " + all);
@@ -30,6 +39,8 @@ public class ArrayPractice {
         System.out.println("평균 : " + all / A.length);
 
         System.out.println("최댓값 : " + max);
+
+        System.out.println("최숫값 : " + min);
 
     }
 
@@ -62,3 +73,5 @@ public class ArrayPractice {
 // for문을 활용하여 배열의 최댓값 출력 코드 완성
 
 // if문 위치를 상단의 for문으로 이동 - 가독성 향상
+
+// for문을 활용하여 배열의 최솟값 출력 코드 완성 + 최갯값 변수 수정

@@ -17,7 +17,9 @@ public class ArrayPractice {
 
         int count = 0;
 
-        int minIdex = 0;
+        int minIdex = 0; // 가장 작은 수응 가진 인덱스 변수
+
+        int midcount = 0; //
 
         for (int X = 0; X < A.length; X++) {
 
@@ -47,9 +49,23 @@ public class ArrayPractice {
 
         }
 
+        int mid = all / A.length; // 평균 변수
+
+        // 평균 이상인 인덱스 갯수 구하기
+
+        for (int W = 0; W < A.length; W++) {
+
+            if (mid <= A[W]) {
+
+            midcount++;
+
+            }
+
+        }
+
         System.out.println("합계 : " + all);
 
-        System.out.println("평균 : " + all / A.length);
+        System.out.println("평균 : " + mid);
 
         System.out.println("최댓값 : " + max);
 
@@ -58,6 +74,8 @@ public class ArrayPractice {
         System.out.println("70이상의 수 : " + count);
 
         System.out.println("가장 낮은 숫자를 가진 인덱스 : " + minIdex);
+
+        System.out.println("평균 이상인 인덱스 갯수 : " + midcount);
 
     }
 
@@ -96,3 +114,5 @@ public class ArrayPractice {
 // 변수와 if문을 사용하여, 조건에 부합하는 숫자 갯수를 출력하는 코드 완성
 
 // 변수 추가로 가장 낮은 인덱스 번호 출력
+
+// 변수, for문, if문 추가로 "평균 이상인 인덱스 갯수" 출력 코드 완성

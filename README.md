@@ -18,3 +18,4 @@
 - ScorePractice : for문 + if문으로 점수 등급 출력 (변수 응용 버전 포함)
 - InputPractice : Scanner로 사용자의 입력을 받아 나이에 따른 성인 여부를 출력하고, 실수 또는 문자열 입력 시 정수 입력을 요청하는 메시지를 출력
 - NumberGuessGame1 : Random으로 사용자가 1부터 10사이의 숫자를 맞추는 게임입니다.
+- NumberGuessGame2 : Scanner로 사용자의 입력을 받아 난이도를 설정하고, 지정된 범위 내의 숫자를 맞추는 게임입니다. 게임 종료 후 재시작 여부를 묻습니다.

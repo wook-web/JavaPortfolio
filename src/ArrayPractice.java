@@ -13,6 +13,10 @@ public class ArrayPractice {
 
         int min = A[0]; // 최솟값 변수
 
+        int over = 70;
+
+        int count = 0;
+
         for (int X = 0; X < A.length; X++) {
 
             System.out.println(A[X]);
@@ -31,6 +35,11 @@ public class ArrayPractice {
 
             }
 
+            if (over <= A[X]){
+
+             count++;
+
+            }
 
         }
 
@@ -41,6 +50,8 @@ public class ArrayPractice {
         System.out.println("최댓값 : " + max);
 
         System.out.println("최숫값 : " + min);
+
+        System.out.println("70이상의 수 : " + count);
 
     }
 
@@ -75,3 +86,5 @@ public class ArrayPractice {
 // if문 위치를 상단의 for문으로 이동 - 가독성 향상
 
 // for문을 활용하여 배열의 최솟값 출력 코드 완성 + 최갯값 변수 수정
+
+// 변수와 if문을 사용하여, 조건에 부합하는 숫자 갯수를 출력하는 코드 완성

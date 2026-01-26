@@ -6,16 +6,91 @@
 ---
 ## 실행 방법
 1. inellij에서 프로젝트 열기
+
+
 2. src 폴더에서 실행할 Jave 파일 선택
+
+
 3. main 매서드 실행
 ---
-## 기능
-- Main : "내가 자바를 실행했다!" 출력, 1부터 3까지 숫자 출력
-- HelloWorld : "HelloWorld!" 출력
-- ForLoopDemo : for문으로 1부터 10까지 출력
-- VariablePractice : 변수 사용하여 문장 출력
-- Condition : if문으로 나이에 따른 성인 여부 출력
-- ScorePractice : for문 + if문으로 점수 등급 출력 (변수 응용 버전 포함)
-- InputPractice : Scanner로 사용자의 입력을 받아 나이에 따른 성인 여부를 출력하고, 실수 또는 문자열 입력 시 정수 입력을 요청하는 메시지를 출력
-- NumberGuessGame1 : Random으로 사용자가 1부터 10사이의 숫자를 맞추는 게임입니다.
-- NumberGuessGame2 : Scanner로 사용자의 입력을 받아 난이도를 설정하고, 지정된 범위 내의 숫자를 맞추는 게임입니다. 게임 종료 후 재시작 여부를 묻습니다.
+## 포함된 예제 목록
+
+1. 기본 출력 및 변수
+2. 반복문 / 조건문
+3. 사용자 입력 처리
+4. 미니게임 프로젝트
+5. 배열 응용
+
+---
+
+### 1. 기본 출력 및 변수
+
+---
+
+- Main
+  - "내가 자바를 실행했다!" 출력, 1부터 3까지 숫자 출력
+
+
+- HelloWorld
+  - "HelloWorld!" 출력
+
+
+- VariablePractice
+  - 변수를 사용하여 문장 출력
+
+---
+
+### 2. 반복문 / 조건문
+
+- ForLoopDemo
+  - for문으로 1부터 10까지 출력
+
+
+- Condition
+  - if문으로 나이에 따른 성인 여부 판단
+
+
+- ScorePractice
+  - for문과 if문을 이용한 점수 등급 분류
+
+---
+
+### 3. 사용자 입력 처리
+
+- InputPractice
+  - Scanner로 나이 입력
+  - 숫자가 아닐 경우 제입력 요청
+
+---
+
+### 4. 미니게임 프로젝트
+
+- NumberGuessGame1
+  - Random으로 생성된 1~10 숫자 맞추기 게임
+
+
+- NumberGuessGame2
+  - 난이도 선택 (범위 변경)
+  - 입력값 검증
+  - 재시작 여부 선택 기능 포함
+
+---
+
+### 5. 배열 응용
+
+- ArrayPractice
+  - 배열의 합계, 평균, 최댓값, 최솟값 게산
+  - 특정조건 (70 이상) 만족하는 값 개수 계산
+  - 최솟값의 인덱스 위치 출력
+  - 평균 이상인 값의 개수 계산
+
+---
+
+## 사용한 문법
+
+- 변수와 자료형
+- if / else 조건문
+- for / while 반복문
+- 배열
+- Scanner 입력처리
+- Random 난수 생성

@@ -17,6 +17,8 @@ public class ArrayPractice {
 
         int count = 0;
 
+        int minIdex = 0;
+
         for (int X = 0; X < A.length; X++) {
 
             System.out.println(A[X]);
@@ -32,6 +34,8 @@ public class ArrayPractice {
             if (min > A[X]) {
 
                 min = A[X];
+
+                minIdex = X;
 
             }
 
@@ -52,6 +56,8 @@ public class ArrayPractice {
         System.out.println("최숫값 : " + min);
 
         System.out.println("70이상의 수 : " + count);
+
+        System.out.println("가장 낮은 숫자를 가진 인덱스 : " + minIdex);
 
     }
 
@@ -88,3 +94,5 @@ public class ArrayPractice {
 // for문을 활용하여 배열의 최솟값 출력 코드 완성 + 최갯값 변수 수정
 
 // 변수와 if문을 사용하여, 조건에 부합하는 숫자 갯수를 출력하는 코드 완성
+
+// 변수 추가로 가장 낮은 인덱스 번호 출력

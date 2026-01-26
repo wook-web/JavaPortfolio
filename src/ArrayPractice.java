@@ -7,6 +7,8 @@ public class ArrayPractice {
 
         int all = 0; // 합계 변수
 
+        int max = 0; // 최댓값 변수
+
         int[] A = {70, 85, 90, 60, 100}; // 배열 생성
 
         for (int X = 0; X < A.length; X++) {
@@ -23,13 +25,15 @@ public class ArrayPractice {
 
         for (int Y = 0; Y < A.length ; Y++) {
 
-            if (>) {
+            if (max < A[Y]) {
 
-                
+                max = A[Y];
 
             }
 
         }
+
+        System.out.println("최댓값 : " + max);
 
     }
 
@@ -56,3 +60,5 @@ public class ArrayPractice {
    최대 = A[Y]
 
    */
+
+// for문을 활용하여 배열의 최댓값 출력 코드 완성
